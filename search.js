@@ -29,11 +29,14 @@ let products = [
 ]
 
 function search(products, searchText){
+    let searchResult = [];
     for (const product of products) {
-        if(product.name.includes("searchText")){
-            console.log(product.name);
+        if(product.name.includes(searchText)){
+            // console.log(product.name);
+            searchResult.push(product);
         }
     }
+    return searchResult;
 }
 
-search(products, "Macbook");
+console.log(search(products, "iPhone"));
