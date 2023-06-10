@@ -29,8 +29,10 @@ let products = [
 ]
 
 function search(products, searchText){
-    for (const porduct of porducts) {
-        console.log(product);
+    for (const product of products) {
+        if(product.name.includes("iPhone")){
+            console.log(product.name);
+        }
     }
 }
 
