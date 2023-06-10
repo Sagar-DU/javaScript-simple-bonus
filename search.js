@@ -30,10 +30,10 @@ let products = [
 
 function search(products, searchText){
     for (const product of products) {
-        if(product.name.includes("iPhone")){
+        if(product.name.includes("searchText")){
             console.log(product.name);
         }
     }
 }
 
-search(products);
+search(products, "Macbook");
